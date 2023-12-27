@@ -1,0 +1,19 @@
+#include <stdio.h>
+int fan(int b,int p)
+{
+    int result=1;
+    for (int i=p;i>=1;i--)
+    {result=result*b;}
+   
+}
+int main()
+{
+    int n,m,j;
+    printf("enter the base number:");
+    scanf("%d",&n);
+     printf("enter the power number:");
+    scanf("%d",&m);
+    j=fan(n,m);
+    printf("result is%d",j);
+    return 0;
+}
